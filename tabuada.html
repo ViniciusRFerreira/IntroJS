@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
-</head>
-<body>
-    <h1>Software de Tabuada</h1>
-    <p>Valor que deseja ver a Tabuada: 
-        <input type="text" id="inValor">
-    </p>
-    <p>
-        <input type="button" value="Mostrar a Tabuada" id="btnTabuada">
-    </p>
-    <h3 id="outValor"></h3>
-    <script src="tabuada.js"></script>
-</body>
+<html>
+ <head>
+   <title>Tabuada</title>
+   <script src="tabuada.js"> </script>
+ </head>
+ <body>
+    Digite o Número: <input id="num" type="number"> <br />
+    <button onclick="tabuada()">Tabuada</button><br />
+    Tabuada: <br />
+    <div id='r' style='display:inline'></div>
+ </body>
 </html>

@@ -1,13 +1,16 @@
 function tabuada(){
-    let inValor = document.getElementById('inValor')
-    let outValor = document.getElementById('outValor')
+    var num = parseInt(document.getElementById("num").value);
+    var r = document.getElementById('r');
+    var t='';
+  
+    for(var count=1; count<=10 ; count++)
+     t += num + " x " + count + " = " + num * count + "<br />";
+    
+    r.innerHTML = t
 
-    let valor = Number(inValor.value);
-    for (let i = 0; i <= 10; i++){
-        let mult = valor * 1;
-        resp += valor + ' X ' + i + ' : ' + mult
-    }
-    outValor.textContent = resp;
+     if (num == 0 || isNaN(num)){
+            alert("Informe um número válido")
+            num.focus()
+            return
+        }
 }
-let btMostrar = document.getElementById("btnTabuada")
-btMostrar.addEventListener('click', tabuada)
